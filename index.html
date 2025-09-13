@@ -12,6 +12,10 @@
 const style = w.document.createElement("link")
 link.rel = "stylesheet"
 w.document.head.appendChild(style)
-        window.top.close();
+      function leave() {
+  var myWindow = window.open("", "_self");
+  myWindow.document.write("");
+  setTimeout (function() {myWindow.close();},1000);
+}
     </script>
 </html>
