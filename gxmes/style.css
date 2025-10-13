@@ -1,23 +1,65 @@
-/* unvisited link */
-a:link {
-   text-decoration: none;
-  color: dimgray;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-/* visited link */
-a:visited {
-  text-decoration: none;
-  color: dimgray;
+/*Bro is good at finding code stuff*/
+
+.center-container {
+  display: flex; /* Enables Flexbox for the container */
+  justify-content: center; /* Horizontally centers content within the flexbox */
+  align-items: center; /* Vertically centers content within the flexbox */
+  height: 96vh; /* Ensures the container takes up the full viewport height for vertical centering */
+  width: 96vw; /* Ensures the container takes up the full viewport width (optional, but good practice) */
 }
 
-/* mouse over link */
-a:hover {
-  text-decoration: none;
-  color: blue;
+    @keyframes colorFade {
+      0% {
+        background-color: #e10000; /* Starting color */
+      }
+      20% {
+        background-color: #e10000; /* Midpoint color */
+      }
+      40% {
+        background-color: #e10000; /* Midpoint color */
+      }
+      60% {
+        background-color: #0f0097; /* Midpoint color */
+      }
+      80% {
+        background-color: #0f0097; /* Midpoint color */
+      }
+      100% {
+        background-color: #0f0097; /* Ending color (and back to start for seamless loop) */
+      }
+    }
+
+        body { /* Or any other element you want to animate */
+      animation: colorFade 10s infinite alternate;
+    }
+
+a {
+  color: #ffffff; /* Set your desired color using hex code or color name */
+      text-decoration: none; /* Removes the underline */
 }
 
-/* selected link */
-a:active {
-  text-decoration: none;
-  color: gray;
+    a:link {
+      color: #ffffff; /* For unvisited links */
+    }
+
+    a:visited {
+      color: #f9f9f9; /* For visited links */
+    }
+
+    a:hover {
+      color: #c9c9c9; /* For when the mouse hovers over the link */
+    }
+
+    a:active {
+      color: black; /* For when the link is being clicked */
 }
